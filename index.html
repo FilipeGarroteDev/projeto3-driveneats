@@ -25,17 +25,19 @@
             <div class="selection">
                 <h3>Primeiro, seu prato</h3>
                 <div class="itens">
-                    <div class="option">
+                    <div class="option" onclick="selectProduct()">
                         <img src="./images/risoto-beterraba.jpg" alt="">
                         <h4>Risoto de Hibisco</h4>
                         <p>Nada de NuBank! Esse é o roxinho de sucesso.</p>
                         <em>R$ 48,90</em>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectProduct()">
                         <img src="./images/risoto-camarao.jpeg" alt="">
                         <h4>Risoto de Camarão</h4>
                         <p>Delícia, delícia! Do mar para seu prato.</p>
                         <em>R$ 69,90</em>
+                        
                     </div>
                     <div class="option">
                         <img src="./images/risoto-açafrão-e-gouda.jpg" alt="">
@@ -132,5 +134,8 @@
             <button>Selecione os 3 itens para fechar o pedido</button>
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
