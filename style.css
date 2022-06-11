@@ -49,6 +49,10 @@
   text-decoration: underline;
 }
 
+.hidden {
+  display:none;
+}
+
 @media (max-width: 614px){
 
   * {
@@ -97,7 +101,7 @@
 
   .container {
     width: 100vw;
-    padding: 92px 0 112px 0;
+    padding: 92px 0;
     background-color: #EEEEEE;
   }
 
@@ -202,7 +206,6 @@
 
   .option-border {
     border: 5px solid #32B72f;
-
   }
 
   .check {
@@ -213,11 +216,25 @@
     color: #32B72f;
   }
 
+  .footer .buttonFinal {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+    background-color: #32B72F;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 80px;
+  }
+
   .confirmation{
     width: 80vw;
     height: 80vw;
-    background-color: red;
+    background-color: #50D074;
     border-radius: 9px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
     position: fixed;
     top: calc(50% - 40vw);
     left: calc(50% - 40vw);
@@ -226,34 +243,59 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
   }
 
   .finalOrder{
     width: 100%;
-    height: 80%;
+    height: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 30px 0 0 0;
   }
 
   .price {
     display: flex;
     flex-direction: column;
   }
-    
 
-  .footer .buttonFinal {
-    width: 364px;
-    height: 61px;
-    border-radius: 50px;
-    border: none;
-    background-color: red;
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    padding: 0 80px;
+  .price span {
+    margin-bottom: 15px;
   }
 
+  .choice p{
+    margin-bottom: 15px;
+  }
+
+  .confirmation button{
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #50D074;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .confirmation > h4 {
+    font-size: 20px;
+  }
+    
+
+
+
+
+
+  .opacity {
+    opacity: 0.2;
+  }
 
     /* CLASSES JS */
 
