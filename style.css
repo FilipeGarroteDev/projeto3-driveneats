@@ -4,16 +4,6 @@
   display: none;
 }
 
-header ion-icon{
-  color: white;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  right: 20px;
-  top: 20px;
-  z-index: 3;
-}
-
 .desktop {
   width: 100vmax;
   height: 100vmin;
@@ -105,9 +95,39 @@ header ion-icon{
     color: #ffffff;
   }
 
+  .checkoutIcon {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    top: 30px;
+  }
+
+  .checkoutIcon ion-icon{
+    color: white;
+    width: 35px;
+    height: 35px;
+    z-index: 3;
+  }
+
+  .counter {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #CF2B2B;
+    position:absolute;
+    right: 0;
+    bottom: 0px;
+  }
+
   .container {
     width: 100vw;
-    padding: 92px 0;
+    padding: 92px 0 122px 0;
     background-color: #EEEEEE;
   }
 
@@ -125,25 +145,7 @@ header ion-icon{
     padding-left: 20px;
   }
 
-  .itens1 {
-    width: 100vw;
-    height: 240px;
-    overflow-x: auto;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
-
-  .itens2 {
-    width: 100vw;
-    height: 240px;
-    overflow-x: auto;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
-
-  .itens3 {
+  .itens1, .itens2, .itens3 {
     width: 100vw;
     height: 240px;
     overflow-x: auto;
@@ -266,12 +268,12 @@ header ion-icon{
     flex-direction: column;
   }
 
-  .price span {
+  .price span, .choice p {
     margin-bottom: 15px;
   }
 
-  .choice p{
-    margin-bottom: 15px;
+  .price span:nth-child(4), .choice p:nth-child(4){
+    font-weight: 700;
   }
 
   .confirmation button{
@@ -280,16 +282,17 @@ header ion-icon{
     background-color: #ffffff;
     border-radius: 50px;
     border: none;
-    
+    font-family: 'Roboto', sans-serif;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
     margin-bottom: 30px;
   }
 
   button a {
     text-decoration: none;
-    color: #50D074;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
+
+
   }
 
   .confirmation > h4 {

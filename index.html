@@ -20,7 +20,10 @@
         <header onclick="cancel()">
             <h1>DrivenEats</h1>
             <h2>Sua comida em 6 minutos</h2>
-            <ion-icon name="receipt-outline"></ion-icon>
+            <div class="checkoutIcon">
+                <ion-icon name="cart-outline"></ion-icon>
+                <div class="counter">0</div>
+            </div>
         </header>
         <div class="container" onclick="cancel()">
             <div class="selection">
@@ -164,7 +167,7 @@
                 <span>preço</span>
             </div>
         </div>
-        <button onclick="order()"><a href="https://wa.me/5511954630107?text=">Tudo certo, pode pedir!</a></button>
+        <button onclick="order()">Tudo certo, pode pedir!</button>
         <h4 onclick="cancel()">Cancelar</h4>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -13,14 +13,17 @@ function selectFood(classOption, classItens){
 
   const optionSelected = element.querySelector(".option-border");
 
+  const counter = document.querySelector(".counter");
   
   if(optionSelected !== null){
     optionSelected.classList.remove("option-border");
     hiddenIcon.classList.remove("check");
+    counter.innerHTML = Number(counter.innerHTML) - 1;
   }
 
   classOption.classList.add("option-border");
   icone.classList.add("check")
+  counter.innerHTML = Number(counter.innerHTML) + 1;
 
   finalizarCompra();
 }
@@ -73,6 +76,22 @@ function clickButton(){
     span3.innerHTML = `R$ ${price3.innerHTML}`;
     span4.innerHTML = `R$ ${soma.toFixed(2)}`
   }
+}
+
+function order(){
+  const name = prompt("Muito obrigado pela sua preferência!! :)\nPor gentileza, me diga seu nome:")
+  const address = prompt("Agora, eu preciso do endereço para o qual seu delicioso pedido será enviado:")
+  const message = `Olá, gostaria de fazer o pedido:
+  - Prato: ${document.querySelector(".choice").querySelector("p:nth-child(1)").innerHTML};
+  - Bebida: ${document.querySelector(".choice").querySelector("p:nth-child(2)").innerHTML}
+  - Sobremesa: ${document.querySelector(".choice").querySelector("p:nth-child(3)").innerHTML}
+  Total: ${document.querySelector(".price").querySelector("span:nth-child(4)").innerHTML}
+  
+  Nome: ${name}
+  Endereço: ${address}`
+
+  const url = `https://wa.me/5511954630107?text=${encodeURIComponent(message)};`
+  window.location.href = url;
 }
 
 
