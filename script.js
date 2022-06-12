@@ -90,7 +90,7 @@ function order(){
   Nome: ${name}
   Endereço: ${address}`
 
-  const url = `https://wa.me/5511954630107?text=${encodeURIComponent(message)};`
+  const url = `https://wa.me/5511954630107?text=${encodeURIComponent(message)}`
   window.location.href = url;
 }
 
