@@ -1,4 +1,9 @@
-
+const section1 = document.querySelector(".itens1")
+const section2 = document.querySelector(".itens2")
+const section3 = document.querySelector(".itens3")
+const sectionConfirmOption = document.querySelector(".choice")
+const sectionConfirmPrice = document.querySelector(".price")
+ 
 
 function selectFood(classOption, classItens){
   const element = document.querySelector(classItens);
@@ -20,11 +25,8 @@ function selectFood(classOption, classItens){
   finalizarCompra();
 }
 
+
 function finalizarCompra(){
-  const section1 = document.querySelector(".itens1")
-  const section2 = document.querySelector(".itens2")
-  const section3 = document.querySelector(".itens3")
-   
   const food = section1.querySelector(".option-border")
   const drink = section2.querySelector(".option-border")
   const dessert = section3.querySelector(".option-border")
@@ -37,13 +39,8 @@ function finalizarCompra(){
   }
 }
 
+
 function clickButton(){
-  const section1 = document.querySelector(".itens1")
-  const section2 = document.querySelector(".itens2")
-  const section3 = document.querySelector(".itens3")
-  const sectionConfirmOption = document.querySelector(".choice")
-  const sectionConfirmPrice = document.querySelector(".price")
-   
   const food = section1.querySelector(".option-border")
   const drink = section2.querySelector(".option-border")
   const dessert = section3.querySelector(".option-border")
@@ -66,8 +63,8 @@ function clickButton(){
   if((food && drink && dessert) !== null){
     let opac = document.querySelector(".mobile");
     opac.classList.add("opacity");
-    let confirm = document. querySelector(".hidden");
-    confirm.classList.add("confirmation");
+    let confirm = document. querySelector(".confirmation");
+    confirm.classList.remove("hidden");
     p1.innerHTML = option1.innerHTML;
     p2.innerHTML = option2.innerHTML;
     p3.innerHTML = option3.innerHTML;
@@ -78,5 +75,12 @@ function clickButton(){
   }
 }
 
+
+function cancel(){
+  const cancelOpacity = document.querySelector(".mobile");
+  const exitSelection = document.querySelector(".confirmation");
+  cancelOpacity.classList.remove("opacity");
+  exitSelection.classList.add("hidden")
+}
 
 

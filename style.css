@@ -4,6 +4,16 @@
   display: none;
 }
 
+header ion-icon{
+  color: white;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
 .desktop {
   width: 100vmax;
   height: 100vmin;
@@ -47,10 +57,6 @@
   color: #ffffff;
   text-align: center;
   text-decoration: underline;
-}
-
-.hidden {
-  display:none;
 }
 
 @media (max-width: 614px){
@@ -194,15 +200,12 @@
     padding-bottom: 5px;
   }
 
+  /* CLASSES JS */
+
   .icon {
     display:none;
   }
-  
-  .hidden {
-    display:none;
-  }
 
-    /* CLASSES JS */
 
   .option-border {
     border: 5px solid #32B72f;
@@ -276,22 +279,26 @@
     height: 20%;
     background-color: #ffffff;
     border-radius: 50px;
-    color: #50D074;
     border: none;
+    
+    margin-bottom: 30px;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #50D074;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 30px;
   }
 
   .confirmation > h4 {
     font-size: 20px;
   }
-    
-
-
-
-
+  
+  .hidden {
+    display:none;
+  }
 
   .opacity {
     opacity: 0.2;
